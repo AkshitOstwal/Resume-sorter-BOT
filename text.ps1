@@ -6,7 +6,7 @@
  [parameter(position=1)]
  $RDSL
          )
-
+ # path is the path of folder containing Resumes
  $files    = Get-Childitem $path -Include *.docx,*.doc,*.pdf -Recurse | Where-Object { !($_.psiscontainer) }
  $output   = "c:\Users\akshi\Desktop\wordfiletry.txt"
  $application = New-Object -comobject word.application
