@@ -17,7 +17,7 @@
  $number = ''
  $PhoneNoPattern = "(?<number>([+]|)(\d{1,3}[-\s]?|)\d{3}[-\s]?\d{3}[-\s]?\d{4})"
  $directoyPath="C:\Users\akshi\Desktop\output Resumes";
-
+        # to clear the output file
       '' | Out-File  $output
       if(!(Test-Path -path $directoyPath))  
         {  
